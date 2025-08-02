@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, Zap, Gift, TrendingUp } from "lucide-react";
 import { type PetType } from "./PetCustomizer";
+import { petActivityTracker } from "@/utils/petActivityTracker";
 
 type PetMood = "happy" | "sad" | "neutral" | "overfed";
 
@@ -21,6 +22,7 @@ export const VirtualPet = ({ selectedPet }: VirtualPetProps) => {
       if (Date.now() - lastInteraction > 10000) { // 10 seconds
         setIsIgnored(true);
         setPetMood("sad");
+        petActivityTracker.trackIgnore();
       }
     }, 2000);
 
@@ -83,11 +85,19 @@ export const VirtualPet = ({ selectedPet }: VirtualPetProps) => {
     setIsIgnored(false);
     setFeedCount(prev => prev + 1);
     
+    // Track feeding activity
+    petActivityTracker.trackFeeding();
+    
     if (feedCount >= 2) {
       setPetMood("overfed");
+      petActivityTracker.trackMoodChange("overfed");
     } else {
       setPetMood("happy");
-      setTimeout(() => setPetMood("neutral"), 3000);
+      petActivityTracker.trackMoodChange("happy");
+      setTimeout(() => {
+        setPetMood("neutral");
+        petActivityTracker.trackMoodChange("neutral");
+      }, 3000);
     }
   };
 
@@ -96,14 +106,30 @@ export const VirtualPet = ({ selectedPet }: VirtualPetProps) => {
     setIsIgnored(false);
     setPetMood("happy");
     setFeedCount(0);
-    setTimeout(() => setPetMood("neutral"), 4000);
+    
+    // Track playing activity
+    petActivityTracker.trackPlaying();
+    petActivityTracker.trackMoodChange("happy");
+    
+    setTimeout(() => {
+      setPetMood("neutral");
+      petActivityTracker.trackMoodChange("neutral");
+    }, 4000);
   };
 
   const handleCare = () => {
     setLastInteraction(Date.now());
     setIsIgnored(false);
     setPetMood("happy");
-    setTimeout(() => setPetMood("neutral"), 3000);
+    
+    // Track caring activity
+    petActivityTracker.trackCaring();
+    petActivityTracker.trackMoodChange("happy");
+    
+    setTimeout(() => {
+      setPetMood("neutral");
+      petActivityTracker.trackMoodChange("neutral");
+    }, 3000);
   };
 
   return (
@@ -176,6 +202,7 @@ export const VirtualPet = ({ selectedPet }: VirtualPetProps) => {
         <Button
           variant="soft"
           size="lg"
+          onClick={() => window.location.href = '/statistics'}
           className="flex-col h-20 w-20"
         >
           <TrendingUp className="w-6 h-6" />
