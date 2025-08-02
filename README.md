@@ -102,6 +102,9 @@ For React Router to work properly on Vercel, create a `vercel.json` file in the 
 #This is where we interact with supplements of the virtual pet and buy some ith crypto#
 4.<img width="1616" height="951" alt="image" src="https://github.com/user-attachments/assets/b84209e7-bc4b-4190-8fdc-8511ca05b9b1" />
 
+## Build Photos
+1.
+
 
 ## 🎥 Demo Video
 
