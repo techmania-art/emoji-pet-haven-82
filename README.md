@@ -1,48 +1,38 @@
-# 🐾 Virtual Interactive Pet
+# 🐾 Emoji Pet Haven
 
-An interactive website where you can play around with a virtual pet — because why not?
+An interactive website where you can adopt and interact with a virtual pet — feed it, connect your wallet for supplements, and just vibe in a clean 3D-inspired UI.
 
 ## 🌐 Project Link
 
-[Check it out here](https://lovable.dev/projects/24e43cc2-02d1-4630-952b-92537884c89b)
+Live: https://emoji-pet-haven-82.lovable.app  
+GitHub: https://github.com/techmania-art/emoji-pet-haven-82/blob/main/README.md
 
 ## 🛠️ Built With
 
-This project uses all the libraries and tools listed in the Lovable project setup. It includes:
-
-- Web-based 3D interaction
-- Virtual pet animations
-- Interactive UI
-- Real-time rendering
+- **React** (framework preset via Lovable)
+- **Tailwind CSS** (styling enforced by the platform)
+- **React Router** (client-side routing)
+- **Web3-style wallet connection (mock)** for cryptocurrency-based pet food purchases
+- **3D/interactive visuals** (inspired design language from Huly.io and Igloo-style navigation)
 
 ## 🤸‍♂️ What It Does
 
-You get to interact with a cute virtual pet inside a browser. That’s all. Nothing serious — just pure joy.
+You get a virtual pet in-browser that you can interact with. Beyond mere clicks, you can “buy” supplements (pet food) using a crypto-style flow by connecting a wallet. The wallet shows mock balances (e.g., `12 BTC` or `1255 ETH`), and purchases animate a fake transaction to feed your pet.
 
-## 🧰 How to Use
+## 💡 Supplements Page (The Extra, Unasked-For Feature)
 
-1. Open the [project link](https://lovable.dev/projects/24e43cc2-02d1-4630-952b-92537884c89b)
-2. Let it load
-3. Play with your new virtual companion
+A dedicated **Supplements** page where you can purchase virtual pet food using cryptocurrency:
 
-## 🎥 Demo Video
+- 3D interactive food items represent different supplements.
+- Users connect their wallet (either via manual address input or simulated Web3 connect).
+- Displays mock balances: `12 BTC` or `1255 ETH` depending on wallet type.
+- Purchase flow with confirmation modal and animated fake transaction success.
+- Designed in the same clean, minimal, interactive UI style (Huly.io + Igloo influence).
 
-https://drive.google.com/drive/folders/1DB4fVXIBFVqCbSWdYxCFl6Gfvv6TQNWa
+## 🧰 How to Use / Deploy
 
-## 📸 Screenshots
-
-1.)<img width="1627" height="932" alt="image" src="https://github.com/user-attachments/assets/bf852f6a-5358-4a86-8fc9-c7745a35e56f" />
-2.)<img width="1626" height="945" alt="image" src="https://github.com/user-attachments/assets/42f6b9f7-317b-42b0-9d0c-44f950204c33" />
-3.)<img width="1620" height="942" alt="image" src="https://github.com/user-attachments/assets/4eeff769-da1c-4453-aa76-3586c93fe569" />
-4.)<img width="1622" height="941" alt="image" src="https://github.com/user-attachments/assets/8f0c89ed-fa44-4fef-9716-74c63e324e55" />
-5.)<img width="1597" height="926" alt="image" src="https://github.com/user-attachments/assets/c3a3da56-f8ea-410d-9d7e-c46b05ed4e84" />
-
-
-
-## 🧑‍💻 Creator
-
-- [Allan](https://lovable.dev/projects/24e43cc2-02d1-4630-952b-92537884c89b)
-
-## 🪪 License
-
-No license.
+### Local Preview (if extracted from Lovable)
+1. Clone the repo.
+2. Install dependencies:
+   ```bash
+   npm install
