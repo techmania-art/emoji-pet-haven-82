@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { VirtualPet } from "./VirtualPet";
 import { availablePets, type PetType } from "./PetCustomizer";
-import { Heart, Gamepad2, Settings, BarChart3, Sparkles, Globe } from "lucide-react";
+import { Heart, Gamepad2, Settings, BarChart3, Sparkles, Globe, ShoppingCart } from "lucide-react";
 
 export const InteractiveHub = () => {
   const [selectedPet, setSelectedPet] = useState<PetType>(availablePets[0]);
@@ -46,12 +46,13 @@ export const InteractiveHub = () => {
       gradient: "bg-gradient-accent"
     },
     {
-      id: "world",
-      title: "Explore",
-      icon: <Globe className="w-6 h-6" />,
-      description: "Discover new worlds",
+      id: "supplements",
+      title: "Supplements",
+      icon: <ShoppingCart className="w-6 h-6" />,
+      description: "Buy virtual pet supplements",
       position: "bottom-left",
-      gradient: "bg-gradient-primary"
+      gradient: "bg-gradient-primary",
+      onClick: () => window.location.href = '/supplements'
     },
     {
       id: "customize",
