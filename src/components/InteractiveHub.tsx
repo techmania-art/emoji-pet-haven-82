@@ -43,7 +43,8 @@ export const InteractiveHub = () => {
       icon: <BarChart3 className="w-6 h-6" />,
       description: "Track your pet's progress",
       position: "bottom-right",
-      gradient: "bg-gradient-accent"
+      gradient: "bg-gradient-accent",
+      onClick: () => window.location.href = '/statistics'
     },
     {
       id: "supplements",
