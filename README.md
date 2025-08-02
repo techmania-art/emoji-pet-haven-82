@@ -110,7 +110,7 @@ For React Router to work properly on Vercel, create a `vercel.json` file in the 
 
 ## 🎥 Demo Video
 
-**Vid:https://drive.google.com/drive/folders/1DB4fVXIBFVqCbSWdYxCFl6Gfvv6TQNWa
+**Vid:https://drive.google.com/drive/folders/1DB4fVXIBFVqCbSWdYxCFl6Gfvv6TQNWa?usp=sharing
 
 ##
 
