@@ -9,11 +9,11 @@
 * **Member 2**: \[Name] – \[College]
 * **Member 3**: \[Name] – \[College]
 
-##Project Description
+Project Description
 
 An interactive website where you can adopt and interact with a virtual pet — feed it, connect your wallet for supplements, and just vibe in a clean 3D-inspired UI.
 
-## ❓ The Problem (That Doesn’t Exist)
+? The Problem (That Doesn’t Exist)
 
 Too many people go through life without having a virtual emoji pet that does absolutely nothing useful. A modern tragedy.
 
