@@ -5,7 +5,8 @@
 ## 👥 Team Members
 
 * **Team Name**: CSE-B
-* **Team Lead**: Allan – CSE-B
+* **Team Lead**: Allan – Sree Buddha College of engineering,Pattoor
+* 
 * **Member 2**: \[Name] – \[College]
 * **Member 3**: \[Name] – \[College]
 
